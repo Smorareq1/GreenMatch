@@ -8,7 +8,232 @@
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-<div id="app-container"></div>
+<div id="app-container">
+    <!-- Header -->
+    <header class="header">
+        <div class="max-w-7xl container">
+            <div class="logo" data-section="home">
+                <div class="logo-icon-wrapper"><i data-lucide="leaf"></i></div>
+                <span class="logo-text">GreenMatch</span>
+            </div>
+            <nav class="nav">
+                <button class="nav-button active" data-section="home">Home</button>
+                <button class="nav-button" data-section="quiz">Quiz</button>
+                <button class="nav-button" data-section="products">Products</button>
+            </nav>
+            <div class="header-actions">
+                <button><i data-lucide="search"></i></button>
+                <button><i data-lucide="shopping-bag"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <div id="home-section">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="max-w-7xl">
+                <div class="hero-main-grid">
+                    <div class="hero-content">
+                        <div class="hero-badge"><i data-lucide="sparkles" style="width:1rem;height:1rem;"></i> Sustainable Living Made Simple</div>
+                        <h1 class="hero-title">Discover Your Perfect <span class="highlight">Eco-Friendly Match</span></h1>
+                        <p class="hero-description">Transform your lifestyle with carefully curated sustainable products. Take our personalized quiz and find eco-friendly solutions that fit your unique needs.</p>
+                        <div class="hero-cta-buttons">
+                            <button class="btn-primary" id="start-quiz-btn"><i data-lucide="arrow-right" style="width:1.25rem;height:1.25rem;"></i> Take the Quiz</button>
+                            <button class="btn-secondary" id="view-products-btn">Browse Products</button>
+                        </div>
+                        <div class="hero-stats">
+                            <div><div class="stat-number">500+</div><div class="stat-label">Happy Customers</div></div>
+                            <div><div class="stat-number">50+</div><div class="stat-label">Eco Products</div></div>
+                            <div><div class="stat-number">100%</div><div class="stat-label">Sustainable</div></div>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="visual-main-card">
+                            <div class="visual-grid">
+                                <div class="visual-item green"><div class="visual-icon-wrapper green"><i data-lucide="leaf" class="icon-green"></i></div><h3>Eco-Friendly</h3></div>
+                                <div class="visual-item blue"><div class="visual-icon-wrapper blue"><i data-lucide="heart" class="icon-blue"></i></div><h3>Health Focused</h3></div>
+                            </div>
+                            <div class="visual-item gray"><div class="visual-icon-wrapper gray"><i data-lucide="shield" class="icon-gray"></i></div><h3>Quality Guaranteed</h3></div>
+                        </div>
+                        <div class="floating-element floating-1"><i data-lucide="sparkles"></i></div>
+                        <div class="floating-element floating-2"><i data-lucide="leaf"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Catalog -->
+        <section class="product-catalog">
+            <div class="max-w-7xl">
+                <div class="catalog-header">
+                    <div class="catalog-badge"><i data-lucide="leaf" style="width:1rem;height:1rem;"></i> Sustainable Products</div>
+                    <h2 class="catalog-title">Our Eco-Friendly Collection</h2>
+                    <p class="catalog-description">Discover our carefully curated selection of sustainable products designed to help you live more consciously.</p>
+                </div>
+                <div class="product-grid" id="product-grid">
+                    <!-- Products will be populated by JavaScript -->
+                </div>
+                <div class="view-all-btn-wrapper"><button class="view-all-btn">View All Products</button></div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="max-w-7xl">
+                <div class="footer-grid">
+                    <div class="footer-brand-col">
+                        <div class="footer-brand">
+                            <div class="logo"><div class="logo-icon-wrapper"><i data-lucide="leaf"></i></div><span class="logo-text">GreenMatch</span></div>
+                            <p class="footer-description">Your trusted partner in sustainable living. We help you discover eco-friendly products that match your lifestyle and values.</p>
+                            <div class="social-links">
+                                <a href="#" class="social-link"><i data-lucide="facebook"></i></a>
+                                <a href="#" class="social-link"><i data-lucide="twitter"></i></a>
+                                <a href="#" class="social-link"><i data-lucide="instagram"></i></a>
+                                <a href="#" class="social-link"><i data-lucide="youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="footer-heading">Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Take Quiz</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Sustainability</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="footer-heading">Customer Service</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Shipping Info</a></li>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">Size Guide</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="footer-heading">Get in Touch</h3>
+                        <div class="contact-item"><i data-lucide="mail"></i><span>hello@greenmatch.com</span></div>
+                        <div class="contact-item"><i data-lucide="phone"></i><span>+1 (555) 123-4567</span></div>
+                        <div class="contact-item"><i data-lucide="map-pin"></i><span>San Francisco, CA</span></div>
+                        <div class="newsletter-form">
+                            <h4>Stay Updated</h4>
+                            <div class="newsletter-input-group">
+                                <input type="email" placeholder="Your email" class="newsletter-input"/>
+                                <button class="newsletter-submit">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom-bar">
+                    <p class="copyright">© 2024 GreenMatch. All rights reserved.</p>
+                    <div class="footer-legal-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Products Section -->
+    <div id="products-section" class="hidden">
+        <section class="product-catalog">
+            <div class="max-w-7xl">
+                <div class="catalog-header">
+                    <div class="catalog-badge"><i data-lucide="leaf" style="width:1rem;height:1rem;"></i> Sustainable Products</div>
+                    <h2 class="catalog-title">Our Eco-Friendly Collection</h2>
+                    <p class="catalog-description">Discover our carefully curated selection of sustainable products designed to help you live more consciously.</p>
+                </div>
+                <div class="product-grid" id="all-products-grid">
+                    <!-- All products will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Quiz Section -->
+    <div id="quiz-section" class="hidden">
+        <main class="quiz-screen">
+            <div class="quiz-container">
+                <div class="quiz-header">
+                    <div class="icon-wrapper"><i data-lucide="leaf"></i></div>
+                    <h1>Discover your GreenMatch 🌱</h1>
+                    <p>Answer three quick questions and find the eco-friendly product that's perfect for you.</p>
+                </div>
+                <div class="quiz-questions-container">
+                    <div class="question-card" data-question-id="location">
+                        <div class="question-title-wrapper">
+                            <div class="icon-wrapper"><i data-lucide="map-pin"></i></div>
+                            <h3>Where do you live?</h3>
+                        </div>
+                        <div class="options-grid">
+                            <button class="option-btn" data-answer="City">City</button>
+                            <button class="option-btn" data-answer="Countryside">Countryside</button>
+                            <button class="option-btn" data-answer="Beach">Beach</button>
+                        </div>
+                    </div>
+                    <div class="question-card" data-question-id="values">
+                        <div class="question-title-wrapper">
+                            <div class="icon-wrapper"><i data-lucide="heart"></i></div>
+                            <h3>What do you value most in your daily life?</h3>
+                        </div>
+                        <div class="options-grid">
+                            <button class="option-btn" data-answer="Personal care">Personal care</button>
+                            <button class="option-btn" data-answer="Eco-friendly cooking">Eco-friendly cooking</button>
+                            <button class="option-btn" data-answer="Energy saving">Energy saving</button>
+                        </div>
+                    </div>
+                    <div class="question-card" data-question-id="commitment">
+                        <div class="question-title-wrapper">
+                            <div class="icon-wrapper"><i data-lucide="target"></i></div>
+                            <h3>How committed are you to sustainable consumption?</h3>
+                        </div>
+                        <div class="options-grid">
+                            <button class="option-btn" data-answer="Never">Never</button>
+                            <button class="option-btn" data-answer="Sometimes">Sometimes</button>
+                            <button class="option-btn" data-answer="Always">Always</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="quiz-submit-wrapper">
+                    <button class="quiz-submit-btn" id="submit-quiz-btn" disabled>Find My GreenMatch</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Result Section -->
+    <div id="result-section" class="hidden">
+        <main class="result-screen">
+            <div class="result-container">
+                <div class="result-header">
+                    <div class="icon-wrapper"><i data-lucide="sparkles"></i></div>
+                    <h1>Your Perfect GreenMatch!</h1>
+                    <p>Here's what we found for you</p>
+                </div>
+                <div class="result-product-card" id="result-product-card">
+                    <!-- Result product will be populated by JavaScript -->
+                </div>
+                <div class="motivational-message">
+                    <div class="message-box">
+                        <p>"Remember, every small change counts. Together we can care for the planet, step by step."</p>
+                    </div>
+                </div>
+                <div class="try-again-wrapper">
+                    <button class="try-again-btn" id="try-again-btn">
+                        <i data-lucide="rotate-ccw" style="width:1rem;height:1rem;"></i> Try Again
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+
 <script src="script.js"></script>
 </body>
 </html>

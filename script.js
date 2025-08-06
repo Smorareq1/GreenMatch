@@ -11,63 +11,63 @@ document.addEventListener('DOMContentLoaded', () => {
         // === CIUDAD ===
         {
             id: 'desodorante-eco-ciudad', name: 'Desodorante ecológico',
-            image: 'https://images.pexels.com/photos/7262913/pexels-photo-7262913.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop',
+            image: 'images/DesodoranteEcologico.jpg',
             description: 'Fórmula vegana y sin residuos químicos.',
             benefit: 'Tu piel merece conciencia.',
             criteria: { location: 'Ciudad', values: 'Cuidado personal', commitment: 'Siempre' }
         },
         {
             id: 'cepillo-bambu-ciudad', name: 'Cepillo de bambú',
-            image: 'https://images.pexels.com/photos/4465831/pexels-photo-4465831.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop',
+            image: 'images/CepilloBambu.jpg',
             description: 'Reduce el uso de plásticos en tu rutina diaria.',
             benefit: 'Cada cepillada cuenta.',
             criteria: { location: 'Ciudad', values: 'Cuidado personal', commitment: 'Nunca' }
         },
         {
             id: 'shampoo-solido-ciudad', name: 'Shampoo sólido',
-            image: 'https://images.pexels.com/photos/4465124/pexels-photo-4465124.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop',
+            image: 'images/ShampooSolido.jpg',
             description: 'Sin plástico y con ingredientes naturales.',
             benefit: 'Tu cabello también ama al planeta.',
             criteria: { location: 'Ciudad', values: 'Cuidado personal', commitment: 'A veces' }
         },
         {
             id: 'tote-bag-ciudad', name: 'Tote bag reutilizable',
-            image: 'https://images.pexels.com/photos/4465829/pexels-photo-4465829.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop',
+            image: 'images/ToteBag.jpg',
             description: 'Ideal para reemplazar bolsas plásticas al hacer compras.',
             benefit: 'Cada hábito cuenta. Empieza por uno.',
             criteria: { location: 'Ciudad', values: 'Cocina ecológica', 'commitment': 'Nunca' }
         },
         {
             id: 'envases-silicona-ciudad', name: 'Envases de silicona',
-            image: 'https://images.pexels.com/photos/4226879/pexels-photo-4226879.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop',
+            image: 'images/EnvasesSilicona.jpg',
             description: 'Alternativa reutilizable al film plástico.',
             benefit: 'Cuidá lo que comés… y cómo lo guardás.',
             criteria: { location: 'Ciudad', values: 'Cocina ecológica', 'commitment': 'A veces' }
         },
         {
             id: 'filtro-agua-ciudad', name: 'Filtro de agua de carbón',
-            image: 'https://images.pexels.com/photos/3094035/pexels-photo-3094035.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop',
+            image: 'images/FiltroCarbon.jpg',
             description: 'Purifica sin necesidad de botellas plásticas.',
             benefit: 'Tu cocina también puede respirar verde.',
             criteria: { location: 'Ciudad', values: 'Cocina ecológica', 'commitment': 'Siempre' }
         },
         {
             id: 'luz-led-ciudad', name: 'Luz LED portátil',
-            image: 'https://images.pexels.com/photos/1166644/pexels-photo-1166644.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop',
+            image: 'images/LedPortatil.jpg',
             description: 'Consumo eficiente y diseño compacto.',
             benefit: 'Ilumina con intención.',
             criteria: { location: 'Ciudad', values: 'Ahorro de energía', commitment: 'Nunca' }
         },
         {
             id: 'bombilla-led-ciudad', name: 'Bombilla LED inteligente',
-            image: 'https://images.pexels.com/photos/8134931/pexels-photo-8134931.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop',
+            image: 'images/LedInteligente.jpg',
             description: 'Programable y ahorradora.',
             benefit: 'Pequeños cambios, gran ahorro.',
             criteria: { location: 'Ciudad', values: 'Ahorro de energía', commitment: 'A veces' }
         },
         {
             id: 'temporizador-enchufe-ciudad', name: 'Temporizador de enchufes',
-            image: 'https://images.pexels.com/photos/577769/pexels-photo-577769.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop',
+            image: 'images/TemporizadorEnchufes.jpg',
             description: 'Controla tu consumo sin esfuerzo.',
             benefit: 'La energía que no usas, también cuenta.',
             criteria: { location: 'Ciudad', values: 'Ahorro de energía', commitment: 'Siempre' }
@@ -75,63 +75,63 @@ document.addEventListener('DOMContentLoaded', () => {
         // === CAMPO ===
         {
             id: 'jabon-artesanal-campo', name: 'Jabón artesanal',
-            image: 'https://images.pexels.com/photos/4465126/pexels-photo-4465126.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop',
+            image: 'images/JabonArtesanal.jpg',
             description: 'Hecho a mano con ingredientes naturales.',
             benefit: 'Volver a lo esencial.',
             criteria: { location: 'Campo', values: 'Cuidado personal', commitment: 'Nunca' }
         },
         {
             id: 'toallas-desmaquillantes-campo', name: 'Toallas desmaquillantes reutilizables',
-            image: 'https://images.pexels.com/photos/7262913/pexels-photo-7262913.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop',
+            image: 'images/ToallasReutilizables.jpg',
             description: 'Reemplazan miles de descartables.',
             benefit: 'Tu rostro también puede cuidar el planeta.',
             criteria: { location: 'Campo', values: 'Cuidado personal', commitment: 'A veces' }
         },
         {
             id: 'kit-higiene-sostenible-campo', name: 'Kit de higiene sostenible',
-            image: 'https://images.pexels.com/photos/7262995/pexels-photo-7262995.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop',
+            image: 'images/KitSostenible.jpg',
             description: 'Incluye cepillo, shampoo y desodorante sin plástico.',
             benefit: 'Sostenibilidad en cada paso.',
             criteria: { location: 'Campo', values: 'Cuidado personal', commitment: 'Siempre' }
         },
         {
             id: 'cubiertos-bambu-campo', name: 'Cubiertos de bambú',
-            image: 'https://images.pexels.com/photos/4099354/pexels-photo-4099354.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop',
+            image: 'images/CubiertosBambu.jpg',
             description: 'Reutilizables y ligeros para cualquier ocasión.',
             benefit: 'Cocina con conciencia.',
             criteria: { location: 'Campo', values: 'Cocina ecológica', commitment: 'Nunca' }
         },
         {
             id: 'filtro-agua-gravedad-campo', name: 'Filtro de agua por gravedad',
-            image: 'https://images.pexels.com/photos/213204/pexels-photo-213204.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop',
+            image: 'images/FiltroGravedad.jpg',
             description: 'Filtra sin electricidad, ideal para áreas rurales.',
             benefit: 'Cuidar el agua es cuidar la vida.',
             criteria: { location: 'Campo', values: 'Cocina ecológica', commitment: 'A veces' }
         },
         {
             id: 'compostera-domestica-campo', name: 'Compostera doméstica',
-            image: 'https://images.pexels.com/photos/5029643/pexels-photo-5029643.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop',
+            image: 'images/ComposteraDomestica.jpg',
             description: 'Convierte residuos orgánicos en abono natural.',
             benefit: 'Tus desechos pueden alimentar la tierra.',
             criteria: { location: 'Campo', values: 'Cocina ecológica', commitment: 'Siempre' }
         },
         {
             id: 'lampara-solar-campo', name: 'Lámpara solar básica',
-            image: 'https://images.pexels.com/photos/163792/scenery-based-on-the-luminaire-light-desktop-backgrounds-163792.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop',
+            image: 'images/LamparaSolar.jpg',
             description: 'Se carga con el sol, ilumina al anochecer.',
             benefit: 'Aprovecha la energía natural.',
             criteria: { location: 'Campo', values: 'Ahorro de energía', commitment: 'Nunca' }
         },
         {
             id: 'panel-solar-portatil-campo', name: 'Panel solar portátil',
-            image: 'https://images.pexels.com/photos/9875441/pexels-photo-9875441.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop',
+            image: 'images/PanelSolar.jpg',
             description: 'Carga dispositivos sin red eléctrica.',
             benefit: 'Energía limpia donde la necesites.',
             criteria: { location: 'Campo', values: 'Ahorro de energía', commitment: 'A veces' }
         },
         {
             id: 'sistema-energia-solar-campo', name: 'Sistema de energía solar autónomo',
-            image: 'https://images.pexels.com/photos/433308/pexels-photo-433308.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop',
+            image: 'images/SistemaEnergia.jpg',
             description: 'Para casas o huertas sostenibles.',
             benefit: 'El sol es tu mejor aliado.',
             criteria: { location: 'Campo', values: 'Ahorro de energía', commitment: 'Siempre' }
@@ -139,63 +139,63 @@ document.addEventListener('DOMContentLoaded', () => {
         // === PLAYA ===
         {
             id: 'protector-solar-playa', name: 'Protector solar biodegradable',
-            image: 'https://images.pexels.com/photos/4465121/pexels-photo-4465121.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop',
+            image: 'images/ProtectorSolar.jpg',
             description: 'Seguro para la piel y para los corales.',
             benefit: 'Cuida tu piel sin dañar el mar.',
             criteria: { location: 'Playa', values: 'Cuidado personal', commitment: 'Nunca' }
         },
         {
             id: 'cepillo-bambu-playa', name: 'Cepillo de bambú compacto',
-            image: 'https://images.pexels.com/photos/4465831/pexels-photo-4465831.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop',
+            image: 'images/CepilloCompacto.jpg',
             description: 'Ideal para viajes o kits personales.',
             benefit: 'Sostenibilidad que va con vos.',
             criteria: { location: 'Playa', values: 'Cuidado personal', commitment: 'A veces' }
         },
         {
             id: 'kit-playa-ecologico-playa', name: 'Kit de playa ecológico',
-            image: 'https://images.pexels.com/photos/7262995/pexels-photo-7262995.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop',
+            image: 'images/KitPlaya.jpg',
             description: 'Incluye protector, jabón y toalla de fibras naturales.',
             benefit: 'Disfruta la arena sin dejar huella.',
             criteria: { location: 'Playa', values: 'Cuidado personal', commitment: 'Siempre' }
         },
         {
             id: 'set-cubiertos-bambu-playa', name: 'Set de cubiertos de bambú',
-            image: 'https://images.pexels.com/photos/4099354/pexels-photo-4099354.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop',
+            image: 'images/SetCubiertos.jpg',
             description: 'Evitá descartables en tus picnics.',
             benefit: 'La playa limpia empieza por tu mochila.',
             criteria: { location: 'Playa', values: 'Cocina ecológica', commitment: 'Nunca' }
         },
         {
             id: 'botella-acero-playa', name: 'Botella de acero',
-            image: 'https://images.pexels.com/photos/3094035/pexels-photo-3094035.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop',
+            image: 'images/BotellaAcero.jpg',
             description: 'Mantiene la temperatura por horas.',
             benefit: 'Cada sorbo cuenta.',
             criteria: { location: 'Playa', values: 'Cocina ecológica', commitment: 'A veces' }
         },
         {
             id: 'kit-picnic-sostenible-playa', name: 'Kit de picnic sustentable',
-            image: 'https://images.pexels.com/photos/4226879/pexels-photo-4226879.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop',
+            image: 'images/KitSostenible.jpg',
             description: 'Incluye platos, cubiertos y servilletas reutilizables.',
             benefit: 'Cada comida puede ser un acto consciente.',
             criteria: { location: 'Playa', values: 'Cocina ecológica', commitment: 'Siempre' }
         },
         {
             id: 'linterna-solar-playa', name: 'Linterna solar',
-            image: 'https://images.pexels.com/photos/9875441/pexels-photo-9875441.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop',
+            image: 'images/LinternaSolar.jpg',
             description: 'Cargá de día, usá de noche.',
             benefit: 'Brilla con energía limpia.',
             criteria: { location: 'Playa', values: 'Ahorro de energía', commitment: 'Nunca' }
         },
         {
             id: 'powerbank-solar-playa', name: 'Powerbank solar',
-            image: 'https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop',
+            image: 'images/PowerBank.jpg',
             description: 'Cargá tu teléfono con energía del sol.',
             benefit: 'La batería verde siempre que necesites.',
             criteria: { location: 'Playa', values: 'Ahorro de energía', commitment: 'A veces' }
         },
         {
             id: 'mini-estacion-solar-playa', name: 'Mini estación solar portátil',
-            image: 'https://images.pexels.com/photos/433308/pexels-photo-433308.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop',
+            image: 'images/EstacionSolar.jpg',
             description: 'Ideal para camping o trabajo remoto.',
             benefit: 'Conectado con la naturaleza, sin enchufes.',
             criteria: { location: 'Playa', values: 'Ahorro de energía', commitment: 'Siempre' }

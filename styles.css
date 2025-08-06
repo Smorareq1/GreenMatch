@@ -1,5 +1,4 @@
-
-    /* Importación de la fuente y estilos base */
+/* Importación de la fuente y estilos base */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
@@ -78,7 +77,7 @@ ul {
     padding-right: 1rem; /* 16px */
 }
 
-/* Header */
+/* Encabezado */
 .header {
     background-color: var(--color-white);
     box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
@@ -164,7 +163,7 @@ ul {
 }
 
 
-/* Hero Section */
+/* Sección Héroe */
 .hero-section {
     position: relative;
     background-image: linear-gradient(to bottom right, var(--color-green-50), var(--color-white), var(--color-green-50));
@@ -267,7 +266,7 @@ ul {
     display: none; /* Oculto en móvil, visible en desktop */
 }
 
-/* Product Catalog */
+/* Catálogo de Productos */
 .product-catalog {
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -339,14 +338,14 @@ ul {
     font-weight: 600;
     color: var(--color-gray-800);
     margin-bottom: 0.5rem;
-    height: 2.5em; /* line-clamp-2 equivalent */
+    height: 2.5em; /* equivalente a line-clamp-2 */
     overflow: hidden;
 }
 .product-description {
     font-size: 0.875rem;
     color: var(--color-gray-600);
     margin-bottom: 1rem;
-    height: 4.5em; /* line-clamp-3 equivalent */
+    height: 4.5em; /* equivalente a line-clamp-3 */
     overflow: hidden;
 }
 .product-benefit-badge {
@@ -407,7 +406,7 @@ ul {
     background-color: var(--color-green-200);
 }
 
-/* Footer */
+/* Pie de Página */
 .footer {
     background-color: var(--color-gray-900);
     color: var(--color-white);
@@ -532,7 +531,7 @@ ul {
     color: var(--color-green-400);
 }
 
-/* Quiz Screen */
+/* Pantalla de Cuestionario */
 .quiz-screen {
     min-height: 100vh;
     background-image: linear-gradient(to bottom right, var(--color-white), var(--color-gray-50));
@@ -663,7 +662,7 @@ ul {
     cursor: not-allowed;
 }
 
-/* Result Screen */
+/* Pantalla de Resultados */
 .result-screen {
     min-height: 100vh;
     background-image: linear-gradient(to bottom right, var(--color-green-50), var(--color-white));

@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const quizErrorMessage = document.getElementById('quiz-error-message');
+
     // --- GESTIÓN DE ESTADO ---
     const state = {
         currentSection: 'home',
@@ -204,14 +206,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- FUNCIONES ---
 
-    // Lógica de match exacta que busca la combinación en el array de productos
     const getMatchingProduct = (answers) => {
         const matched = products.find(product =>
             product.criteria.location === answers.location &&
             product.criteria.values === answers.values &&
             product.criteria.commitment === answers.commitment
         );
-        // Si no encuentra una coincidencia (porque alguna combinación no está en la tabla), devuelve un producto aleatorio.
         return matched || products[Math.floor(Math.random() * products.length)];
     };
 
@@ -304,22 +304,29 @@ document.addEventListener('DOMContentLoaded', () => {
             const questionCard = e.currentTarget.closest('.question-card');
             questionCard.querySelectorAll('.option-btn').forEach(b => b.classList.remove('selected'));
             e.currentTarget.classList.add('selected');
-            const isComplete = state.answers.location && state.answers.values && state.answers.commitment;
-            document.getElementById('submit-quiz-btn').disabled = !isComplete;
+
+            quizErrorMessage.classList.add('hidden');
         });
     });
 
     document.getElementById('submit-quiz-btn').addEventListener('click', () => {
-        state.matchedProduct = getMatchingProduct(state.answers);
-        populateResultProduct(state.matchedProduct);
-        showSection('result');
+        const isComplete = state.answers.location && state.answers.values && state.answers.commitment;
+
+        if (isComplete) {
+            state.matchedProduct = getMatchingProduct(state.answers);
+            populateResultProduct(state.matchedProduct);
+            showSection('result');
+        } else {
+            quizErrorMessage.classList.remove('hidden');
+            lucide.createIcons();
+        }
     });
 
     document.getElementById('try-again-btn').addEventListener('click', () => {
         state.answers = { location: '', values: '', commitment: '' };
         state.matchedProduct = null;
         document.querySelectorAll('.option-btn').forEach(btn => btn.classList.remove('selected'));
-        document.getElementById('submit-quiz-btn').disabled = true;
+        quizErrorMessage.classList.add('hidden');
         showSection('quiz');
     });
 
